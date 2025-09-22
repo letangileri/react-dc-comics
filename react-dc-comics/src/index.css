@@ -52,3 +52,56 @@ main{
   padding:2rem;
   color:white;
 }
+
+/* #footer*/
+.dc-footer{
+  width: 100vw;
+  height: 60vh;
+  background-image: url(../src/assets/img/footer-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.row{
+  height: 50vh;
+  width: 25vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-d-flex{
+  display: flex;
+  justify-content: space-between;
+}
+h3{
+  color: #ffffff;
+  padding: 0.75rem 0;
+  text-transform: uppercase;
+}
+.dc-ul-footer{
+  list-style: none;
+ }
+.dc-ul-footer li{
+  padding: 0.15rem;
+}
+.dc-ul-footer li a{
+  text-decoration: none;
+  color:#766f6b;
+  font-size: small;
+}
+
+#dc-logo-bg{
+  img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+  }
+}
+
+.dc-footer-bottom{
+  width: 100vw;
+  height: 10vh;
+  background-color: #1c1c1c;
+}
+
