@@ -1,5 +1,13 @@
 import dcLogoBg from '../assets/img/dc-logo-bg.png'
 
+import dcFb from '../assets/img/footer-facebook.png'
+import dcTw from '../assets/img/footer-twitter.png'
+import dcYT from '../assets/img/footer-youtube.png'
+import dcPinterest from '../assets/img/footer-pinterest.png'
+import dcMaps from '../assets/img/footer-periscope.png'
+
+
+
 
 export default function AppFooter(){
     return(
@@ -114,7 +122,20 @@ export default function AppFooter(){
                 </div>
                 <img id="dc-logo-bg" src={dcLogoBg} alt="logo dello sfondo" />
             </div>
-            <div className='dc-footer-bottom'></div>
+            <div className='dc-footer-bottom'>
+                <div className='container d-flex'>
+                    <button>Sign-up now</button>
+                    <div className='dc-social'>
+                        <h4>follow us</h4>
+                        <i><img src={dcFb} alt="" /></i>
+                        <i><img src={dcTw} alt="" /></i>
+                        <i><img src={dcYT} alt="" /></i>
+                        <i><img src={dcPinterest} alt="" /></i>
+                        <i><img src={dcMaps} alt="" /></i>
+                    </div>
+                </div>
+
+            </div>
         </footer>
     )
 }

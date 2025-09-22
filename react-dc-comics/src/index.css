@@ -55,6 +55,8 @@ main{
 
 /* #footer*/
 .dc-footer{
+  display: flex;
+  flex-direction: column;
   width: 100vw;
   height: 60vh;
   background-image: url(../src/assets/img/footer-bg.jpg);
@@ -103,5 +105,31 @@ h3{
   width: 100vw;
   height: 10vh;
   background-color: #1c1c1c;
+ 
+}
+
+.dc-social{
+  display: flex;
+  /* width: 1rem; */
+  align-items: center;
+  gap:1rem;
+}
+h4{
+  color: #0282f9;
+  text-transform: uppercase;
+}
+.d-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 10vh;
+}
+
+button{
+  border: solid #0282f9 2px;
+  padding: 0.75rem 1.25rem;
+  background-color: transparent;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
