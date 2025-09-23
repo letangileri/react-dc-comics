@@ -120,7 +120,7 @@ export default function AppFooter(){
                         </ul>
                     </div>
                 </div>
-                <img id="dc-logo-bg" src={dcLogoBg} alt="logo dello sfondo" />
+                {/* <img id="dc-logo-bg" src={dcLogoBg} alt="logo dello sfondo" /> */}
             </div>
             <div className='dc-footer-bottom'>
                 <div className='container d-flex'>
