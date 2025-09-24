@@ -12,23 +12,23 @@ export default function AppBanner(){
             <div className='container banner-container'>
                 <div className='img-banner'>
                     <img src={img1} alt="" />
-                    <p>ciao</p>
+                    <p>Digital Comics</p>
                 </div>
                 <div className='img-banner'>
                     <img src={img2} alt="" />
-                    <p>ciao</p>
+                    <p>DC Merchandise</p>
                 </div>
                 <div className='img-banner'>
                     <img src={img3} alt="" />
-                    <p>ciao</p>
+                    <p>Subscriptions</p>
                 </div>
                 <div className='img-banner'>
                     <img src={img4} alt="" />
-                    <p>ciao</p>
+                    <p>Comic Shop Locator</p>
                 </div>
                 <div className='img-banner'>
                     <img src={img5} alt="" />
-                    <p>ciao</p>
+                    <p>DC Power Visa</p>
                 </div>
             </div>
         </section>
