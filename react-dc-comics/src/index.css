@@ -49,7 +49,7 @@ body {
 .hero{
   height: 40vh;
   width: 100vw;
-  background-image: url(../src/assets/img/jumbotron.jpg);
+  background-image: url(./assets/img/jumbotron.jpg);
   background-size: cover;
 }
 
