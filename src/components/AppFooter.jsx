@@ -189,12 +189,13 @@ export default function AppFooter(){
                     {menu_footer[0].map(menu=>(
                         <div className="colums">
                             <h3>{menu.title}</h3>
+                            <ul className='dc-ul-footer'>
                             {menu.list.map(list => (
                             <li>
                             <a href={list.link}>{list.text}</a>
                             </li>
-                        
-                        ))}</div>
+                            
+                        ))}</ul></div>
                 </div>
             </div>
 
