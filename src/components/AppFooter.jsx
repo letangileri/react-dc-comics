@@ -197,7 +197,29 @@ export default function AppFooter(){
                             ))}
                             </ul></div>
                             ))}
-                        
+                                       
+                    {menu_footer[1].map(menu=>(
+                        <div className="colums">
+                            <h3>{menu.title}</h3>
+                            <ul className='dc-ul-footer'>
+                            {menu.list.map(list => (
+                            <li>
+                            <a href={list.link}>{list.text}</a>
+                            </li>
+                            ))}
+                            </ul></div>
+                            ))}    
+                    {menu_footer[2].map(menu=>(
+                        <div className="colums">
+                            <h3>{menu.title}</h3>
+                            <ul className='dc-ul-footer'>
+                            {menu.list.map(list => (
+                            <li>
+                            <a href={list.link}>{list.text}</a>
+                            </li>
+                            ))}
+                            </ul></div>
+                            ))} 
                 </div>
             </div>
 
