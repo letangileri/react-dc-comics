@@ -194,8 +194,10 @@ export default function AppFooter(){
                             <li>
                             <a href={list.link}>{list.text}</a>
                             </li>
-                            
-                        ))}</ul></div>
+                            ))}
+                            </ul></div>
+                            ))}
+                        
                 </div>
             </div>
 
