@@ -6,7 +6,110 @@ import dcYT from '../assets/img/footer-youtube.png'
 import dcPinterest from '../assets/img/footer-pinterest.png'
 import dcMaps from '../assets/img/footer-periscope.png'
 
+const menu_footer =[
+    {
+        title: 'dcComics',
+        list:[
+            {
+                id: 1,
+                text: "Characters",
+                link: '#',
+            },
+            {
+                id: 2,
+                text: "Comics",
+                link: '#',
+            },
+            {
+                id: 3,
+                text: "Movies",
+                link: '#',
+            },
+            {
+                id: 4,
+                text: "TV",
+                link: '#',
+            },
+            {
+                id: 5,
+                text: "Games",
+                link: '#',
+            },
+            {
+                id: 6,
+                text: "Collectibles",
+                link: '#',
+            },
+            {
+                id: 7,
+                text: "Video",
+                link: '#',
+            },
+            {
+                id: 8,
+                text: "Fan",
+                link: '#',
+            },
+            {
+                id: 9,
+                text: "News",
+                link: '#',
+            }
 
+        ]
+    },
+    {
+        title: 'dcComics',
+        list:[
+            {
+                id: 1,
+                text: "Characters",
+                link: '#',
+            },
+            {
+                id: 2,
+                text: "Comics",
+                link: '#',
+            },
+            {
+                id: 3,
+                text: "Movies",
+                link: '#',
+            },
+            {
+                id: 4,
+                text: "TV",
+                link: '#',
+            },
+            {
+                id: 5,
+                text: "Games",
+                link: '#',
+            },
+            {
+                id: 6,
+                text: "Collectibles",
+                link: '#',
+            },
+            {
+                id: 7,
+                text: "Video",
+                link: '#',
+            },
+            {
+                id: 8,
+                text: "Fan",
+                link: '#',
+            },
+            {
+                id: 9,
+                text: "News",
+                link: '#',
+            }
+
+        ]
+    }
+]
 
 
 export default function AppFooter(){
@@ -15,9 +118,17 @@ export default function AppFooter(){
             <div className="container footer-d-flex">
                 <div className="row">
                     <div className="colums">
-                        <h3>dc Comics</h3>
+                        {/* <h3>dc Comics</h3> */}
+
                         <ul className='dc-ul-footer'>
-                            <li>
+                            {menu_footer.map((menu)=>(
+                                menu.list.map(list => (
+                                    <li><a href={list.id}>{list.text}</a>
+                                </li>  
+                            ))
+
+                            ))}
+                            {/* <li>
                                 <a href="">Characters</a>
                             </li>
                             <li>
@@ -43,7 +154,7 @@ export default function AppFooter(){
                             </li>
                             <li>
                                 <a href="">News</a>
-                            </li>
+                            </li> */}
                         </ul>
                         <h3>shop</h3>
                         <ul className='dc-ul-footer'>

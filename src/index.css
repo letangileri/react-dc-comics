@@ -131,14 +131,14 @@ main{
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 60vh;
+  min-height: 60vh;
   background-image: url(../src/assets/img/footer-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .row{
-  height: 50vh;
+  min-height: 50vh;
   width: 25vw;
   display: flex;
   justify-content: space-between;
@@ -150,6 +150,7 @@ main{
   background-image: url(../src/assets/img/dc-logo-bg.png);
   background-repeat: no-repeat;
   background-position: right;
+  background-size: 70vh;
 }
 h3{
   color: #ffffff;
