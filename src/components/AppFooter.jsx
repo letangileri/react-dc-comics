@@ -59,51 +59,16 @@ const menu_footer =[
         ]
     },
     {
-        title: 'dcComics',
+        title: 'Shop',
         list:[
             {
                 id: 1,
-                text: "Characters",
+                text: "Shop1",
                 link: '#',
             },
             {
                 id: 2,
-                text: "Comics",
-                link: '#',
-            },
-            {
-                id: 3,
-                text: "Movies",
-                link: '#',
-            },
-            {
-                id: 4,
-                text: "TV",
-                link: '#',
-            },
-            {
-                id: 5,
-                text: "Games",
-                link: '#',
-            },
-            {
-                id: 6,
-                text: "Collectibles",
-                link: '#',
-            },
-            {
-                id: 7,
-                text: "Video",
-                link: '#',
-            },
-            {
-                id: 8,
-                text: "Fan",
-                link: '#',
-            },
-            {
-                id: 9,
-                text: "News",
+                text: "Shop2",
                 link: '#',
             }
 
@@ -122,9 +87,14 @@ export default function AppFooter(){
 
                         <ul className='dc-ul-footer'>
                             {menu_footer.map((menu)=>(
+                                <h3>{menu.title}</h3>,
+                                console.log(menu.title),
+                                
                                 menu.list.map(list => (
-                                    <li><a href={list.id}>{list.text}</a>
-                                </li>  
+                                    console.log(menu),
+                                    <li>
+                                        <a href={list.link}>{list.text}</a>
+                                    </li>  
                             ))
 
                             ))}
